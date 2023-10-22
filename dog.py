@@ -4,20 +4,21 @@ class Dog:
         self.name = name
         self.breed = breed
         self.is_sitting = False
-        
+    
     def bark(self):
         print("Woof!")
         
     def sit(self):
-        if self.is_sitting:
-            print(f"{self.name} is already sitting!")
+        if not self.is_sitting:
+            print(f"{self.name} is already sitting")
         else:
-            self.is_sitting = True
-            print(f"{self.name} sits down.")
+            print(f"{self.name} sits.")
             
     def stand(self):
         if self.is_sitting:
-            self.is_sitting = False
-            print(f"{self.name} stands up")
+            print(f"{self.name} stands up.)
         else:
-            print(f"{self.name} is already standing!.")
+            print(f"{self.name} is already standing.)
+            
+    def roll(self):
+        print(f"{self.name} is rolling around!)
